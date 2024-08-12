@@ -1,0 +1,20 @@
+<!-- File: custom_modules/hr_attendance_inherit/reports/marketing_campaign_reports.xml -->
+
+<odoo>
+    <template id="report_marketing_campaign_performance">
+        <t t-call="web.external_layout">
+            <div class="page">
+                <h2>Marketing Campaign Performance</h2>
+                <t t-foreach="docs" t-as="doc">
+                    <p><strong>Campaign Name:</strong> <t t-esc="doc.name"/></p>
+                    <p><strong>Start Date:</strong> <t t-esc="doc.start_date"/></p>
+                    <p><strong>End Date:</strong> <t t-esc="doc.end_date"/></p>
+                    <p><strong>Total Budget:</strong> <t t-esc="doc.total_budget"/></p>
+                    <p><strong>Expected Revenue:</strong> <t t-esc="doc.expected_revenue"/></p>
+                    <p><strong>Actual Cost:</strong> <t t-esc="doc.actual_cost"/></p>
+                    <p><strong>Actual Revenue:</strong> <t t-esc="doc.actual_revenue"/></p>
+                </t>
+            </div>
+        </t>
+    </template>
+</odoo>

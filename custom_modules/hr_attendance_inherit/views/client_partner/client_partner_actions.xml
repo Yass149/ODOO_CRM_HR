@@ -1,0 +1,27 @@
+<odoo>
+    <!-- Action for Client/Partner -->
+    <record id="action_client_partner" model="ir.actions.act_window">
+        <field name="name">Client/Partner</field>
+        <field name="res_model">client.partner</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="view_client_partner_tree"/>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create your first Client/Partner
+            </p>
+        </field>
+    </record>
+
+    <!-- Action for Interactions -->
+    <record id="action_client_partner_interaction" model="ir.actions.act_window">
+        <field name="name">Interactions</field>
+        <field name="res_model">client.partner.interaction</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="view_client_partner_interaction_tree"/>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Log your first Interaction
+            </p>
+        </field>
+    </record>
+</odoo>

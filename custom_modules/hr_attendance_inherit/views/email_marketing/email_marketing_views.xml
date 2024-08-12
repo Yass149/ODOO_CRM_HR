@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <!-- Form View -->
+    <record id="view_email_marketing_form" model="ir.ui.view">
+        <field name="name">email.marketing.form</field>
+        <field name="model">email.marketing</field>
+        <field name="arch" type="xml">
+            <form string="Email Marketing">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="subject"/>
+                        <field name="body"/>
+                        <field name="recipient_ids"/>
+                        <field name="scheduled_date"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Tree View -->
+    <record id="view_email_marketing_tree" model="ir.ui.view">
+        <field name="name">email.marketing.tree</field>
+        <field name="model">email.marketing</field>
+        <field name="arch" type="xml">
+            <tree string="Email Marketing">
+                <field name="name"/>
+                <field name="subject"/>
+                <field name="state"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Search View -->
+    <record id="view_email_marketing_search" model="ir.ui.view">
+        <field name="name">email.marketing.search</field>
+        <field name="model">email.marketing</field>
+        <field name="arch" type="xml">
+            <search string="Email Marketing">
+                <field name="name"/>
+                <field name="subject"/>
+                <filter name="filter_draft" string="Draft" domain="[('state', '=', 'draft')]"/>
+                <filter name="filter_scheduled" string="Scheduled" domain="[('state', '=', 'scheduled')]"/>
+                <filter name="filter_sent" string="Sent" domain="[('state', '=', 'sent')]"/>
+            </search>
+        </field>
+    </record>
+</odoo>

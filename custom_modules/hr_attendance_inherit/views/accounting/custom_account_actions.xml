@@ -1,0 +1,16 @@
+<!-- File: custom_modules/hr_attendance_inherit/views/custom_account_actions.xml -->
+
+<odoo>
+    <record id="action_custom_account" model="ir.actions.act_window">
+        <field name="name">Accounts</field>
+        <field name="res_model">custom.account</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="view_tree_custom_account"/>
+    </record>
+
+    <record id="action_custom_journal_entry" model="ir.actions.act_window">
+        <field name="name">Journal Entries</field>
+        <field name="res_model">custom.journal.entry</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>

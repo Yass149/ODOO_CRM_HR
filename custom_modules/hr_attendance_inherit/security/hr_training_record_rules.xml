@@ -1,0 +1,49 @@
+<odoo>
+    <!-- Record rule for employees to see only their own training sessions -->
+    <record id="rule_training_session_see_own" model="ir.rule">
+        <field name="name">See Own Training Sessions</field>
+        <field name="model_id" ref="model_hr_training_session"/>
+        <field name="domain_force">[('employee_id.user_id', '=', user.id)]</field>
+        <field name="perm_read" eval="1"/>
+        <field name="perm_write" eval="0"/>
+        <field name="perm_create" eval="0"/>
+        <field name="perm_unlink" eval="0"/>
+        <field name="groups" eval="[(6, 0, [ref('base.group_user')])]"/>
+    </record>
+
+    <!-- Record rule for admins to manage all training sessions -->
+    <record id="rule_training_session_manage_all" model="ir.rule">
+        <field name="name">Manage All Training Sessions</field>
+        <field name="model_id" ref="model_hr_training_session"/>
+        <field name="domain_force">[(1, '=', 1)]</field>
+        <field name="perm_read" eval="1"/>
+        <field name="perm_write" eval="1"/>
+        <field name="perm_create" eval="1"/>
+        <field name="perm_unlink" eval="1"/>
+        <field name="groups" eval="[(6, 0, [ref('base.group_system')])]"/>
+    </record>
+
+    <!-- Record rule for employees to see only their own training -->
+    <record id="rule_training_see_own" model="ir.rule">
+        <field name="name">See Own Training</field>
+        <field name="model_id" ref="model_hr_training"/>
+        <field name="domain_force">[('employee_id.user_id', '=', user.id)]</field>
+        <field name="perm_read" eval="1"/>
+        <field name="perm_write" eval="0"/>
+        <field name="perm_create" eval="0"/>
+        <field name="perm_unlink" eval="0"/>
+        <field name="groups" eval="[(6, 0, [ref('base.group_user')])]"/>
+    </record>
+
+    <!-- Record rule for admins to manage all training -->
+    <record id="rule_training_manage_all" model="ir.rule">
+        <field name="name">Manage All Training</field>
+        <field name="model_id" ref="model_hr_training"/>
+        <field name="domain_force">[(1, '=', 1)]</field>
+        <field name="perm_read" eval="1"/>
+        <field name="perm_write" eval="1"/>
+        <field name="perm_create" eval="1"/>
+        <field name="perm_unlink" eval="1"/>
+        <field name="groups" eval="[(6, 0, [ref('base.group_system')])]"/>
+    </record>
+</odoo>

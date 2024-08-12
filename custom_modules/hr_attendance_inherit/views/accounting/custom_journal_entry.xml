@@ -1,0 +1,19 @@
+<odoo>
+    <record id="view_custom_journal_entry_form" model="ir.ui.view">
+        <field name="name">custom.journal.entry.form</field>
+        <field name="model">custom.journal.entry</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="date"/>
+                        <field name="debit"/>
+                        <field name="credit"/>
+                        <!-- Add more fields here -->
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>

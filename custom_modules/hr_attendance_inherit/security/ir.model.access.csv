@@ -1,0 +1,30 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_remote_work_request,Access Remote Work Request,model_remote_work_request,,1,1,1,1
+access_hr_employee_user,Access HR Employee User,model_hr_employee,base.group_user,1,0,0,0
+access_hr_employee_manager,Access HR Employee Manager,model_hr_employee,hr.group_hr_manager,1,1,1,1
+access_hr_payroll,Access HR Payroll,model_hr_payroll,,1,1,1,1
+access_hr_payroll_payslip_user,Access HR Payroll Payslip User,model_hr_payroll_payslip,base.group_user,1,0,0,0
+access_hr_payroll_payslip_manager,Access HR Payroll Payslip Manager,model_hr_payroll_payslip,hr.group_hr_manager,1,1,1,1
+access_hr_training_user,Access HR Training User,model_hr_training,base.group_user,1,0,0,0
+access_hr_training_manager,Access HR Training Manager,model_hr_training,base.group_system,1,1,1,1
+access_hr_training_session_user,Access HR Training Session User,model_hr_training_session,base.group_user,1,0,0,0
+access_hr_training_session_manager,Access HR Training Session Manager,model_hr_training_session,base.group_system,1,1,1,1
+access_marketing_campaign_user,Access Marketing Campaign User,model_marketing_campaign,group_marketing_team,1,0,0,0
+access_marketing_campaign_manager,Access Marketing Campaign Manager,model_marketing_campaign,group_marketing_team,1,1,1,1
+access_marketing_segmentation_user,Access Marketing Segmentation User,model_marketing_segmentation,group_marketing_team,1,0,0,0
+access_marketing_segmentation_manager,Access Marketing Segmentation Manager,model_marketing_segmentation,group_marketing_team,1,1,1,1
+access_marketing_performance_tracking_user,Access Marketing Performance Tracking User,model_marketing_performance_tracking,group_marketing_team,1,0,0,0
+access_marketing_performance_tracking_manager,Access Marketing Performance Tracking Manager,model_marketing_performance_tracking,group_marketing_team,1,1,1,1
+access_email_marketing_user,Access Email Marketing User,model_email_marketing,base.group_user,1,1,1,1
+access_email_marketing_manager,Access Email Marketing Manager,model_email_marketing,base.group_system,1,1,1,1
+access_custom_account_user,Access Custom Account User,model_custom_account,base.group_user,1,0,0,0
+access_custom_account_manager,Access Custom Account Manager,model_custom_account,base.group_system,1,1,1,1
+access_custom_journal_entry_user,Access Custom Journal Entry User,model_custom_journal_entry,base.group_user,1,0,0,0
+access_custom_journal_entry_manager,Access Custom Journal Entry Manager,model_custom_journal_entry,base.group_system,1,1,1,1
+access_custom_bank_transaction_user,Access Custom Bank Transaction User,model_custom_bank_transaction,group_custom_account_user,1,1,1,1
+access_custom_bank_transaction_manager,Access Custom Bank Transaction Manager,model_custom_bank_transaction,group_custom_account_manager,1,1,1,1
+access_audit_log_manager,Audit Log Manager,model_audit_log,base.group_user,1,1,1,1
+access_audit_log_user,Audit Log User,model_audit_log,base.group_user,1,0,1,0
+access_social_media_account,social_media_account,model_social_media_account,,1,1,1,1
+access_social_post,social_post,model_social_post,,1,1,1,1
+access_social_feed,social_feed,model_social_feed,,1,1,1,1

@@ -1,0 +1,11 @@
+<!-- File: custom_modules/hr_attendance_inherit/views/marketing_segmentation_actions.xml -->
+
+<odoo>
+    <record id="action_marketing_segmentation" model="ir.actions.act_window">
+        <field name="name">Marketing Segmentations</field>
+        <field name="res_model">marketing.segmentation</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="view_tree_marketing_segmentation"/>
+    </record>
+</odoo>
+

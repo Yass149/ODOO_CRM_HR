@@ -1,0 +1,107 @@
+<odoo>
+
+    <record id="action_marketing_segmentation" model="ir.actions.act_window">
+        <field name="name">Segmentations</field>
+        <field name="res_model">marketing.segmentation</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- Form view -->
+<record id="view_marketing_campaign_form" model="ir.ui.view">
+        <field name="name">marketing.campaign.form</field>
+        <field name="model">marketing.campaign</field>
+        <field name="arch" type="xml">
+            <form string="Marketing Campaign">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="start_date"/>
+                        <field name="end_date"/>
+                        <field name="budget"/>
+                        <field name="state"/>
+                    </group>
+                    <group>
+                        <field name="description"/>
+                    </group>
+                    <notebook>
+                        <page string="Segmentations">
+                            <field name="segmentation_ids" widget="many2many_tags"/>
+                        </page>
+                        <page string="Performance Tracking">
+                            <field name="performance_tracking_ids" mode="tree,form" />
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <!-- Tree view for performance tracking -->
+    <record id="view_marketing_performance_tracking_tree" model="ir.ui.view">
+        <field name="name">marketing.performance.tracking.tree</field>
+        <field name="model">marketing.performance.tracking</field>
+        <field name="arch" type="xml">
+            <tree string="Performance Tracking">
+                <field name="total_budget"/>
+                <field name="expected_revenue"/>
+                <field name="actual_cost"/>
+                <field name="actual_revenue"/>
+            </tree>
+        </field>
+    </record>
+    <!-- Tree view -->
+    <record id="view_marketing_campaign_tree" model="ir.ui.view">
+        <field name="name">marketing.campaign.tree</field>
+        <field name="model">marketing.campaign</field>
+        <field name="arch" type="xml">
+            <tree string="Marketing Campaigns">
+                <field name="name"/>
+                <field name="start_date"/>
+                <field name="end_date"/>
+                <field name="budget"/>
+                <field name="state"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Form view for performance tracking -->
+    <record id="view_marketing_performance_tracking_form" model="ir.ui.view">
+        <field name="name">marketing.performance.tracking.form</field>
+        <field name="model">marketing.performance.tracking</field>
+        <field name="arch" type="xml">
+            <form string="Performance Tracking">
+                <sheet>
+                    <group>
+                        <field name="campaign_id"/>
+                        <field name="total_budget"/>
+                        <field name="expected_revenue"/>
+                        <field name="actual_cost"/>
+                        <field name="actual_revenue"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <!-- Search view -->
+    <record id="view_marketing_campaign_search" model="ir.ui.view">
+        <field name="name">marketing.campaign.search</field>
+        <field name="model">marketing.campaign</field>
+        <field name="arch" type="xml">
+            <search string="Marketing Campaigns">
+                <field name="name"/>
+                <field name="state"/>
+            </search>
+        </field>
+    </record>
+
+    <!-- Action for opening Marketing Campaigns -->
+    <record id="action_marketing_campaign" model="ir.actions.act_window">
+        <field name="name">Marketing Campaigns</field>
+        <field name="res_model">marketing.campaign</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_create">
+                Click to create a new marketing campaign.
+            </p>
+        </field>
+    </record>
+</odoo>

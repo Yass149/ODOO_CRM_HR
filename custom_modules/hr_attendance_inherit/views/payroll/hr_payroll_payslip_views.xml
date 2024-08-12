@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="view_hr_payroll_payslip_form" model="ir.ui.view">
+        <field name="name">hr.payroll.payslip.form</field>
+        <field name="model">hr.payroll.payslip</field>
+        <field name="arch" type="xml">
+            <form string="Payroll Payslip">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="employee_id"/>
+                        <field name="date_from"/>
+                        <field name="date_to"/>
+                        <field name="salary"/>
+                        <field name="deductions"/>
+                        <field name="net_salary"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_hr_payroll_payslip_tree" model="ir.ui.view">
+        <field name="name">hr.payroll.payslip.tree</field>
+        <field name="model">hr.payroll.payslip</field>
+        <field name="arch" type="xml">
+            <tree string="Payroll Payslips">
+                <field name="name"/>
+                <field name="employee_id"/>
+                <field name="date_from"/>
+                <field name="date_to"/>
+                <field name="net_salary"/>
+            </tree>
+        </field>
+    </record>
+
+    <menuitem id="menu_hr_payroll_payslip" name="Payslips" parent="menu_hr_payroll_root" action="action_hr_payroll_payslip"/>
+</odoo>

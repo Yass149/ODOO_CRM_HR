@@ -1,0 +1,41 @@
+<odoo>
+    <!-- Server Action to send Check-In Reminder -->
+    <record id="action_send_checkin_reminder" model="ir.actions.server">
+        <field name="name">Send Check-In Reminder</field>
+        <field name="model_id" ref="hr.model_hr_employee"/>
+        <field name="state">code</field>
+        <field name="code">
+            if record.user_id:
+                message = "Reminder: Please check in."
+                self.env['mail.message'].create({
+                    'message_type': 'notification',
+                    'subtype_id': self.env.ref('mail.mt_comment').id,
+                    'body': message,
+                    'subject': "Check-In Reminder",
+                    'needaction_partner_ids': [(4, record.user_id.partner_id.id)],
+                    'model': 'hr.employee',
+                    'res_id': record.id,
+                })
+        </field>
+    </record>
+
+    <!-- Server Action to send Check-Out Reminder -->
+    <record id="action_send_checkout_reminder" model="ir.actions.server">
+        <field name="name">Send Check-Out Reminder</field>
+        <field name="model_id" ref="hr.model_hr_employee"/>
+        <field name="state">code</field>
+        <field name="code">
+            if record.user_id:
+                message = "Reminder: Please check out."
+                self.env['mail.message'].create({
+                    'message_type': 'notification',
+                    'subtype_id': self.env.ref('mail.mt_comment').id,
+                    'body': message,
+                    'subject': "Check-Out Reminder",
+                    'needaction_partner_ids': [(4, record.user_id.partner_id.id)],
+                    'model': 'hr.employee',
+                    'res_id': record.id,
+                })
+        </field>
+    </record>
+</odoo>

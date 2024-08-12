@@ -1,0 +1,9 @@
+<odoo>
+    <data noupdate="1">
+        <!-- Define the Marketing Team Group -->
+        <record id="group_marketing_team" model="res.groups">
+            <field name="name">Marketing Team</field>
+            <field name="category_id" ref="base.module_category_marketing"/>
+        </record>
+    </data>
+</odoo>

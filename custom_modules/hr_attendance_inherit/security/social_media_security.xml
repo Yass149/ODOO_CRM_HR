@@ -1,0 +1,69 @@
+<odoo>
+    <record id="group_social_media_user" model="res.groups">
+        <field name="name">Social Media User</field>
+    </record>
+
+    <record id="group_social_media_manager" model="res.groups">
+        <field name="name">Social Media Manager</field>
+    </record>
+
+    <record id="access_social_media_account_user" model="ir.model.access">
+        <field name="name">access_social_media_account_user</field>
+        <field name="model_id" ref="model_social_media_account"/>
+        <field name="group_id" ref="group_social_media_user"/>
+        <field name="perm_read" eval="1"/>
+        <field name="perm_write" eval="0"/>
+        <field name="perm_create" eval="0"/>
+        <field name="perm_unlink" eval="0"/>
+    </record>
+
+    <record id="access_social_media_account_manager" model="ir.model.access">
+        <field name="name">access_social_media_account_manager</field>
+        <field name="model_id" ref="model_social_media_account"/>
+        <field name="group_id" ref="group_social_media_manager"/>
+        <field name="perm_read" eval="1"/>
+        <field name="perm_write" eval="1"/>
+        <field name="perm_create" eval="1"/>
+        <field name="perm_unlink" eval="1"/>
+    </record>
+
+    <record id="access_social_post_user" model="ir.model.access">
+        <field name="name">access_social_post_user</field>
+        <field name="model_id" ref="model_social_post"/>
+        <field name="group_id" ref="group_social_media_user"/>
+        <field name="perm_read" eval="1"/>
+        <field name="perm_write" eval="0"/>
+        <field name="perm_create" eval="1"/>
+        <field name="perm_unlink" eval="0"/>
+    </record>
+
+    <record id="access_social_post_manager" model="ir.model.access">
+        <field name="name">access_social_post_manager</field>
+        <field name="model_id" ref="model_social_post"/>
+        <field name="group_id" ref="group_social_media_manager"/>
+        <field name="perm_read" eval="1"/>
+        <field name="perm_write" eval="1"/>
+        <field name="perm_create" eval="1"/>
+        <field name="perm_unlink" eval="1"/>
+    </record>
+
+    <record id="access_social_feed_user" model="ir.model.access">
+        <field name="name">access_social_feed_user</field>
+        <field name="model_id" ref="model_social_feed"/>
+        <field name="group_id" ref="group_social_media_user"/>
+        <field name="perm_read" eval="1"/>
+        <field name="perm_write" eval="0"/>
+        <field name="perm_create" eval="0"/>
+        <field name="perm_unlink" eval="0"/>
+    </record>
+
+    <record id="access_social_feed_manager" model="ir.model.access">
+        <field name="name">access_social_feed_manager</field>
+        <field name="model_id" ref="model_social_feed"/>
+        <field name="group_id" ref="group_social_media_manager"/>
+        <field name="perm_read" eval="1"/>
+        <field name="perm_write" eval="1"/>
+        <field name="perm_create" eval="1"/>
+        <field name="perm_unlink" eval="1"/>
+    </record>
+</odoo>

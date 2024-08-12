@@ -1,0 +1,9 @@
+<!-- hr_payroll_custom/data/sequence.xml -->
+<odoo>
+    <record id="seq_hr_payroll" model="ir.sequence">
+        <field name="name">Payroll</field>
+        <field name="code">hr.payroll</field>
+        <field name="prefix">PAY</field>
+        <field name="padding">4</field>
+    </record>
+</odoo>

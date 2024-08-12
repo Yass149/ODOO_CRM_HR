@@ -1,0 +1,32 @@
+<!-- File: custom_modules/hr_attendance_inherit/views/marketing_segmentation_views.xml -->
+
+<odoo>
+    <record id="view_form_marketing_segmentation" model="ir.ui.view">
+        <field name="name">marketing.segmentation.form</field>
+        <field name="model">marketing.segmentation</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="description"/>
+                        <field name="criteria"/>
+                        <field name="member_count"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_tree_marketing_segmentation" model="ir.ui.view">
+        <field name="name">marketing.segmentation.tree</field>
+        <field name="model">marketing.segmentation</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="member_count"/>
+            </tree>
+        </field>
+    </record>
+</odoo>
+

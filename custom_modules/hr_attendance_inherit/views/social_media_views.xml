@@ -1,0 +1,98 @@
+<odoo>
+    <menuitem id="menu_social_media" name="Social Media" sequence="10"/>
+
+    <menuitem id="menu_social_media_accounts" name="Accounts" parent="menu_social_media" action="action_social_media_accounts"/>
+    <menuitem id="menu_social_media_posts" name="Posts" parent="menu_social_media" action="action_social_media_posts"/>
+    <menuitem id="menu_social_media_feeds" name="Feeds" parent="menu_social_media" action="action_social_media_feeds"/>
+
+    <record id="view_social_media_account_form" model="ir.ui.view">
+        <field name="name">social.media.account.form</field>
+        <field name="model">social.media.account</field>
+        <field name="arch" type="xml">
+            <form string="Social Media Account">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="platform"/>
+                        <field name="access_token"/>
+                        <field name="api_url"/>
+                        <field name="user_id"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_social_media_account_tree" model="ir.ui.view">
+        <field name="name">social.media.account.tree</field>
+        <field name="model">social.media.account</field>
+        <field name="arch" type="xml">
+            <tree string="Social Media Accounts">
+                <field name="name"/>
+                <field name="platform"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_social_post_form" model="ir.ui.view">
+        <field name="name">social.post.form</field>
+        <field name="model">social.post</field>
+        <field name="arch" type="xml">
+            <form string="Social Post">
+                <sheet>
+                    <group>
+                        <field name="account_id"/>
+                        <field name="content"/>
+                        <field name="scheduled_time"/>
+                        <field name="state"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_social_post_tree" model="ir.ui.view">
+        <field name="name">social.post.tree</field>
+        <field name="model">social.post</field>
+        <field name="arch" type="xml">
+            <tree string="Social Posts">
+                <field name="account_id"/>
+                <field name="content"/>
+                <field name="scheduled_time"/>
+                <field name="state"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_social_feed_form" model="ir.ui.view">
+        <field name="name">social.feed.form</field>
+        <field name="model">social.feed</field>
+        <field name="arch" type="xml">
+            <form string="Social Feed">
+                <sheet>
+                    <group>
+                        <field name="account_id"/>
+                        <field name="content"/>
+                        <field name="timestamp"/>
+                        <field name="likes_count"/>
+                        <field name="comments_count"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_social_feed_tree" model="ir.ui.view">
+        <field name="name">social.feed.tree</field>
+        <field name="model">social.feed</field>
+        <field name="arch" type="xml">
+            <tree string="Social Feeds">
+                <field name="account_id"/>
+                <field name="content"/>
+                <field name="timestamp"/>
+                <field name="likes_count"/>
+                <field name="comments_count"/>
+            </tree>
+        </field>
+    </record>
+</odoo>

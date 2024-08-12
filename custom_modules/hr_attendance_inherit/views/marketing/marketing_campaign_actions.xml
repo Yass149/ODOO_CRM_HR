@@ -1,0 +1,10 @@
+<!-- File: custom_modules/hr_attendance_inherit/views/marketing_campaign_actions.xml -->
+
+<odoo>
+    <record id="action_marketing_campaign" model="ir.actions.act_window">
+        <field name="name">Marketing Campaigns</field>
+        <field name="res_model">marketing.campaign</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="view_marketing_campaign_tree"/>
+    </record>
+</odoo>

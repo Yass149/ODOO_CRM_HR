@@ -1,0 +1,7 @@
+<odoo>
+    <record id="action_employee_checkin_dashboard" model="ir.actions.act_window">
+        <field name="name">Employee Check-In Dashboard</field>
+        <field name="res_model">employee.checkin.dashboard</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>

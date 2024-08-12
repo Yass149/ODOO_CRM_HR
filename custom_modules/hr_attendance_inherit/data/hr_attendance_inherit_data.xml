@@ -1,0 +1,8 @@
+<odoo>
+    <!-- Action for Performance Tracking -->
+    <record id="action_marketing_performance_tracking" model="ir.actions.act_window">
+        <field name="name">Performance Tracking</field>
+        <field name="res_model">marketing.performance.tracking</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>

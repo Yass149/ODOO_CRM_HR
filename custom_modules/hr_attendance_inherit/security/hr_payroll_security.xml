@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Access rights for HR managers -->
+    <record id="access_hr_payroll_payslip_manager" model="ir.model.access">
+        <field name="name">HR Payroll Payslip Manager</field>
+        <field name="model_id" ref="model_hr_payroll_payslip"/>
+        <field name="group_id" ref="hr.group_hr_manager"/>
+        <field name="perm_read" eval="1"/>
+        <field name="perm_write" eval="1"/>
+        <field name="perm_create" eval="1"/>
+        <field name="perm_unlink" eval="1"/>
+    </record>
+
+    <!-- Access rights for regular employees -->
+    <record id="access_hr_payroll_payslip_employee" model="ir.model.access">
+        <field name="name">HR Payroll Payslip Employee</field>
+        <field name="model_id" ref="model_hr_payroll_payslip"/>
+        <field name="group_id" ref="base.group_user"/>
+        <field name="perm_read" eval="1"/>
+        <field name="perm_write" eval="0"/>
+        <field name="perm_create" eval="0"/>
+        <field name="perm_unlink" eval="0"/>
+    </record>
+
+    <!-- Record rule to restrict employees to see only their own payslips -->
+    <record id="rule_payslip_employee" model="ir.rule">
+        <field name="name">Employee Own Payslip</field>
+        <field name="model_id" ref="model_hr_payroll_payslip"/>
+        <field name="groups" eval="[(4, ref('base.group_user'))]"/>
+        <field name="domain_force">[('employee_id.user_id', '=', user.id)]</field>
+    </record>
+</odoo>

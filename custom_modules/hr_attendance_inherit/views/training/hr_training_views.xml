@@ -1,0 +1,65 @@
+<odoo>
+    <!-- Training Form View -->
+    <record id="view_hr_training_form" model="ir.ui.view">
+        <field name="name">hr.training.form</field>
+        <field name="model">hr.training</field>
+        <field name="arch" type="xml">
+            <form string="Training">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="description"/>
+                        <field name="start_date"/>
+                        <field name="end_date"/>
+                        <field name="employee_ids" widget="many2many_tags"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Training Tree View -->
+    <record id="view_hr_training_tree" model="ir.ui.view">
+        <field name="name">hr.training.tree</field>
+        <field name="model">hr.training</field>
+        <field name="arch" type="xml">
+            <tree string="Trainings">
+                <field name="name"/>
+                <field name="start_date"/>
+                <field name="end_date"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Training Session Form View -->
+    <record id="view_hr_training_session_form" model="ir.ui.view">
+        <field name="name">hr.training.session.form</field>
+        <field name="model">hr.training.session</field>
+        <field name="arch" type="xml">
+            <form string="Training Session">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="training_id"/>
+                        <field name="session_date"/>
+                        <field name="instructor_id"/>
+                        <field name="attendee_ids" widget="many2many_tags"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Training Session Tree View -->
+    <record id="view_hr_training_session_tree" model="ir.ui.view">
+        <field name="name">hr.training.session.tree</field>
+        <field name="model">hr.training.session</field>
+        <field name="arch" type="xml">
+            <tree string="Training Sessions">
+                <field name="name"/>
+                <field name="training_id"/>
+                <field name="session_date"/>
+            </tree>
+        </field>
+    </record>
+</odoo>

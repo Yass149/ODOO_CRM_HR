@@ -1,0 +1,29 @@
+<!-- File: custom_modules/hr_attendance_inherit/reports/custom_account_reports.xml -->
+
+<odoo>
+    <template id="report_balance_sheet">
+        <t t-call="web.external_layout">
+            <div class="page">
+                <h2>Balance Sheet</h2>
+                <t t-foreach="docs" t-as="doc">
+                    <p><strong>Account Name:</strong> <t t-esc="doc.name"/></p>
+                    <p><strong>Balance:</strong> <t t-esc="doc.balance"/></p>
+                    <p><strong>Account Type:</strong> <t t-esc="doc.account_type"/></p>
+                </t>
+            </div>
+        </t>
+    </template>
+
+    <template id="report_income_statement">
+        <t t-call="web.external_layout">
+            <div class="page">
+                <h2>Income Statement</h2>
+                <t t-foreach="docs" t-as="doc">
+                    <p><strong>Account Name:</strong> <t t-esc="doc.name"/></p>
+                    <p><strong>Balance:</strong> <t t-esc="doc.balance"/></p>
+                    <p><strong>Account Type:</strong> <t t-esc="doc.account_type"/></p>
+                </t>
+            </div>
+        </t>
+    </template>
+</odoo>

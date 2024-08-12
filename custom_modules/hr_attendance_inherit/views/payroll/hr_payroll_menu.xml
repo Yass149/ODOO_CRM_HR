@@ -1,0 +1,9 @@
+<!-- Update hr_payroll_menu.xml -->
+<odoo>
+    <!-- Define the root menu item for Payroll -->
+    <menuitem id="menu_hr_payroll_root" name="Payroll" groups="hr.group_hr_manager"/>
+
+    <!-- Define submenus under Payroll -->
+    <menuitem id="menu_hr_payroll_overview" name="Overview" parent="menu_hr_payroll_root" action="action_hr_payroll_overview" groups="hr.group_hr_manager"/>
+    <menuitem id="menu_hr_payroll_slips" name="Payroll Slips" parent="menu_hr_payroll_root" action="action_hr_payroll_payslip" groups="base.group_user"/>
+</odoo>

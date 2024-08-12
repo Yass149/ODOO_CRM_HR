@@ -1,0 +1,76 @@
+<odoo>
+    <!-- Define External ID for action_send_checkin_reminder -->
+    <record id="action_send_checkin_reminder" model="ir.actions.server">
+        <field name="name">Send Check-In Reminder</field>
+        <field name="model_id" ref="hr.model_hr_employee"/>
+        <field name="state">code</field>
+        <field name="code">
+            if record.user_id:
+                message = "Reminder: Please check in."
+                self.env['mail.message'].create({
+                    'message_type': 'notification',
+                    'subtype_id': self.env.ref('mail.mt_comment').id,
+                    'body': message,
+                    'subject': "Check-In Reminder",
+                    'needaction_partner_ids': [(4, record.user_id.partner_id.id)],
+                    'model': 'hr.employee',
+                    'res_id': record.id,
+                })
+        </field>
+    </record>
+
+    <!-- Define External ID for action_send_checkout_reminder -->
+    <record id="action_send_checkout_reminder" model="ir.actions.server">
+        <field name="name">Send Check-Out Reminder</field>
+        <field name="model_id" ref="hr.model_hr_employee"/>
+        <field name="state">code</field>
+        <field name="code">
+            if record.user_id:
+                message = "Reminder: Please check out."
+                self.env['mail.message'].create({
+                    'message_type': 'notification',
+                    'subtype_id': self.env.ref('mail.mt_comment').id,
+                    'body': message,
+                    'subject': "Check-Out Reminder",
+                    'needaction_partner_ids': [(4, record.user_id.partner_id.id)],
+                    'model': 'hr.employee',
+                    'res_id': record.id,
+                })
+        </field>
+    </record>
+
+    <!-- Assign External IDs to the Cron Jobs -->
+    <!-- Scheduled Action to Send Check-In Reminders -->
+    <record id="ir_cron_send_checkin_reminders" model="ir.cron">
+        <field name="name">Send Check-In Reminders</field>
+        <field name="model_id" ref="hr.model_hr_employee"/>
+        <field name="state">code</field>
+        <field name="code"><![CDATA[
+employees = env['hr.employee'].search([])
+for employee in employees:
+    env.ref('checkin_checkout_server_actions.action_send_checkin_reminder').sudo().run({'record': employee})
+        ]]></field>
+        <field name="interval_number">1</field>
+        <field name="interval_type">days</field>
+        <field name="numbercall">-1</field>
+        <field name="doall" eval="False"/>
+        <field name="nextcall" eval="(datetime.now() + timedelta(hours=8)).strftime('%Y-%m-%d %H:%M:%S')"/>
+    </record>
+
+    <!-- Scheduled Action to Send Check-Out Reminders -->
+    <record id="ir_cron_send_checkout_reminders" model="ir.cron">
+        <field name="name">Send Check-Out Reminders</field>
+        <field name="model_id" ref="hr.model_hr_employee"/>
+        <field name="state">code</field>
+        <field name="code"><![CDATA[
+employees = env['hr.employee'].search([])
+for employee in employees:
+    env.ref('checkin_checkout_server_actions.action_send_checkout_reminder').sudo().run({'record': employee})
+        ]]></field>
+        <field name="interval_number">1</field>
+        <field name="interval_type">days</field>
+        <field name="numbercall">-1</field>
+        <field name="doall" eval="False"/>
+        <field name="nextcall" eval="(datetime.now() + timedelta(hours=8)).strftime('%Y-%m-%d %H:%M:%S')"/>
+    </record>
+</odoo>

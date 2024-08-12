@@ -1,0 +1,13 @@
+<odoo>
+    <menuitem id="menu_marketing_root" name="Marketing" sequence="1"/>
+
+    <menuitem id="menu_marketing_campaigns" name="Campaigns"
+              parent="menu_marketing_root" action="action_marketing_campaign"/>
+
+    <menuitem id="menu_marketing_segmentation" name="Segmentations"
+              parent="menu_marketing_root" action="hr_attendance_inherit.action_marketing_segmentation"/>
+
+    <!-- New menu item for performance tracking -->
+    <menuitem id="menu_marketing_performance_tracking" name="Performance Tracking"
+              parent="menu_marketing_root" action="action_marketing_performance_tracking"/>
+</odoo>

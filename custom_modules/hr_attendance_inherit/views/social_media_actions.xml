@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="action_social_media_accounts" model="ir.actions.act_window">
+        <field name="name">Social Media Accounts</field>
+        <field name="res_model">social.media.account</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <record id="action_social_media_posts" model="ir.actions.act_window">
+        <field name="name">Social Media Posts</field>
+        <field name="res_model">social.post</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <record id="action_social_media_feeds" model="ir.actions.act_window">
+        <field name="name">Social Media Feeds</field>
+        <field name="res_model">social.feed</field>
+        <field name="view_mode">tree</field>
+    </record>
+</odoo>

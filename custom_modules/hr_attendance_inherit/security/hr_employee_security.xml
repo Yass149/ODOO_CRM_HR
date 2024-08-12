@@ -1,0 +1,15 @@
+<odoo>
+    <!-- Creating the custom HR Manager group -->
+    <record id="group_hr_manager_custom" model="res.groups">
+        <field name="name">HR Manager Custom</field>
+        <field name="category_id" ref="base.module_category_human_resources"/>
+    </record>
+
+    <!-- Adding the security rule -->
+    <record id="hr_employee_manager_rule" model="ir.rule">
+        <field name="name">Employee manager access</field>
+        <field name="model_id" ref="hr.model_hr_employee"/>
+        <field name="domain_force">[(1, '=', 1)]</field>
+        <field name="groups" eval="[(4, ref('group_hr_manager_custom'))]"/>
+    </record>
+</odoo>

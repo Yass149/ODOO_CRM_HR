@@ -1,0 +1,3 @@
+<odoo>
+    <menuitem id="menu_employee_checkin_dashboard" name="Employee Check-In Dashboard" parent="hr.menu_hr_root" action="action_employee_checkin_dashboard"/>
+</odoo>

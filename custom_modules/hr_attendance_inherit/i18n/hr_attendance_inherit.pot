@@ -1,0 +1,897 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* hr_attendance_inherit
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-07-15 14:45+0000\n"
+"PO-Revision-Date: 2024-07-15 14:45+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: hr_attendance_inherit
+#: model:mail.template,body_html:hr_attendance_inherit.email_template_check_in_reminder
+msgid ""
+"\n"
+"            \n"
+"            <p>Dear ${object.name},</p>\n"
+"            <p>This is a reminder to check in for the day.</p>\n"
+"            <p>Best regards,</p>\n"
+"            <p>Your Company</p>\n"
+"            \n"
+"        "
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model_terms:ir.ui.view,arch_db:hr_attendance_inherit.report_balance_sheet
+#: model_terms:ir.ui.view,arch_db:hr_attendance_inherit.report_income_statement
+msgid "<strong>Account Name:</strong>"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model_terms:ir.ui.view,arch_db:hr_attendance_inherit.report_balance_sheet
+#: model_terms:ir.ui.view,arch_db:hr_attendance_inherit.report_income_statement
+msgid "<strong>Account Type:</strong>"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model_terms:ir.ui.view,arch_db:hr_attendance_inherit.report_marketing_campaign_performance
+msgid "<strong>Actual Cost:</strong>"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model_terms:ir.ui.view,arch_db:hr_attendance_inherit.report_marketing_campaign_performance
+msgid "<strong>Actual Revenue:</strong>"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model_terms:ir.ui.view,arch_db:hr_attendance_inherit.report_balance_sheet
+#: model_terms:ir.ui.view,arch_db:hr_attendance_inherit.report_income_statement
+msgid "<strong>Balance:</strong>"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model_terms:ir.ui.view,arch_db:hr_attendance_inherit.report_marketing_campaign_performance
+msgid "<strong>Campaign Name:</strong>"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model_terms:ir.ui.view,arch_db:hr_attendance_inherit.report_marketing_campaign_performance
+msgid "<strong>End Date:</strong>"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model_terms:ir.ui.view,arch_db:hr_attendance_inherit.report_marketing_campaign_performance
+msgid "<strong>Expected Revenue:</strong>"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model_terms:ir.ui.view,arch_db:hr_attendance_inherit.report_marketing_campaign_performance
+msgid "<strong>Start Date:</strong>"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model_terms:ir.ui.view,arch_db:hr_attendance_inherit.report_marketing_campaign_performance
+msgid "<strong>Total Budget:</strong>"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_custom_bank_transaction__account_id
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_custom_journal_entry__account_id
+msgid "Account"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_custom_account__name
+msgid "Account Name"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_custom_account__account_type
+msgid "Account Type"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:ir.ui.menu,name:hr_attendance_inherit.menu_custom_accounting_root
+msgid "Accounting"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:ir.actions.act_window,name:hr_attendance_inherit.action_custom_account
+#: model:ir.ui.menu,name:hr_attendance_inherit.menu_custom_accounts
+msgid "Accounts"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_marketing_performance_tracking__actual_cost
+msgid "Actual Cost"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_marketing_performance_tracking__actual_revenue
+msgid "Actual Revenue"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_custom_bank_transaction__amount
+msgid "Amount"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:ir.model.fields.selection,name:hr_attendance_inherit.selection__remote_work_request__state__approved
+msgid "Approved"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:ir.model.fields.selection,name:hr_attendance_inherit.selection__custom_account__account_type__asset
+msgid "Asset"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:ir.model,name:hr_attendance_inherit.model_hr_attendance
+msgid "Attendance"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_hr_training_session__attendee_ids
+msgid "Attendees"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:ir.model,name:hr_attendance_inherit.model_audit_log
+msgid "Audit Log"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_custom_account__balance
+msgid "Balance"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model_terms:ir.ui.view,arch_db:hr_attendance_inherit.report_balance_sheet
+msgid "Balance Sheet"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:ir.model,name:hr_attendance_inherit.model_report_custom_accounting_report_balance_sheet
+msgid "Balance Sheet Report"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_custom_account__bank_transactions_ids
+#: model_terms:ir.ui.view,arch_db:hr_attendance_inherit.view_form_custom_account
+msgid "Bank Transactions"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_marketing_campaign__budget
+msgid "Budget"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_marketing_performance_tracking__campaign_id
+msgid "Campaign"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_email_marketing__name
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_marketing_campaign__name
+msgid "Campaign Name"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:ir.ui.menu,name:hr_attendance_inherit.menu_marketing_campaigns
+msgid "Campaigns"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_hr_employee__can_work_remotely
+msgid "Can Work Remotely"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:ir.model.fields.selection,name:hr_attendance_inherit.selection__marketing_campaign__state__cancelled
+msgid "Cancelled"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:mail.template,name:hr_attendance_inherit.email_template_check_in_reminder
+#: model:mail.template,subject:hr_attendance_inherit.email_template_check_in_reminder
+msgid "Check-In Reminder"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_employee_checkin_dashboard__check_in_status
+msgid "Check-In Status"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_hr_attendance__in_latitude
+msgid "Check-in Latitude"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_hr_attendance__in_longitude
+msgid "Check-in Longitude"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_hr_attendance__out_latitude
+msgid "Check-out Latitude"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_hr_attendance__out_longitude
+msgid "Check-out Longitude"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model_terms:ir.actions.act_window,help:hr_attendance_inherit.email_marketing_action
+msgid "Click to create a new email marketing campaign."
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model_terms:ir.actions.act_window,help:hr_attendance_inherit.action_marketing_campaign
+msgid "Click to create a new marketing campaign."
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:ir.model.fields.selection,name:hr_attendance_inherit.selection__employee_checkin_dashboard__check_in_status__completed
+msgid "Completed"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:ir.model.fields.selection,name:hr_attendance_inherit.selection__hr_payroll__state__confirmed
+#: model_terms:ir.ui.view,arch_db:hr_attendance_inherit.view_hr_payroll_search
+msgid "Confirmed"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_audit_log__create_uid
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_custom_account__create_uid
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_custom_bank_transaction__create_uid
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_custom_journal_entry__create_uid
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_email_marketing__create_uid
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_employee_checkin_dashboard__create_uid
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_hr_payroll__create_uid
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_hr_payroll_payslip__create_uid
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_hr_training__create_uid
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_hr_training_session__create_uid
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_marketing_campaign__create_uid
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_marketing_performance_tracking__create_uid
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_marketing_segmentation__create_uid
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_remote_work_request__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_audit_log__create_date
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_custom_account__create_date
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_custom_bank_transaction__create_date
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_custom_journal_entry__create_date
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_email_marketing__create_date
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_employee_checkin_dashboard__create_date
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_hr_payroll__create_date
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_hr_payroll_payslip__create_date
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_hr_training__create_date
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_hr_training_session__create_date
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_marketing_campaign__create_date
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_marketing_performance_tracking__create_date
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_marketing_segmentation__create_date
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_remote_work_request__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_custom_journal_entry__credit
+msgid "Credit"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:ir.model,name:hr_attendance_inherit.model_custom_account
+msgid "Custom Account"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:res.groups,name:hr_attendance_inherit.group_custom_account_manager
+msgid "Custom Account Manager"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:res.groups,name:hr_attendance_inherit.group_custom_account_user
+msgid "Custom Account User"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:ir.model,name:hr_attendance_inherit.model_custom_bank_transaction
+msgid "Custom Bank Transaction"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:ir.model,name:hr_attendance_inherit.model_custom_journal_entry
+msgid "Custom Journal Entry"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_custom_journal_entry__date
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_hr_payroll__date
+msgid "Date"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_hr_payroll_payslip__date_from
+msgid "Date From"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_hr_payroll_payslip__date_to
+msgid "Date To"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_custom_journal_entry__debit
+msgid "Debit"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_hr_payroll_payslip__deductions
+msgid "Deductions"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_audit_log__description
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_custom_journal_entry__description
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_hr_training__description
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_marketing_campaign__description
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_marketing_segmentation__description
+msgid "Description"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_audit_log__display_name
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_custom_account__display_name
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_custom_bank_transaction__display_name
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_custom_journal_entry__display_name
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_email_marketing__display_name
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_employee_checkin_dashboard__display_name
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_hr_payroll__display_name
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_hr_payroll_payslip__display_name
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_hr_training__display_name
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_hr_training_session__display_name
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_marketing_campaign__display_name
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_marketing_performance_tracking__display_name
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_marketing_segmentation__display_name
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_remote_work_request__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:ir.model.fields.selection,name:hr_attendance_inherit.selection__marketing_campaign__state__done
+msgid "Done"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:ir.model.fields.selection,name:hr_attendance_inherit.selection__email_marketing__state__draft
+#: model:ir.model.fields.selection,name:hr_attendance_inherit.selection__hr_payroll__state__draft
+#: model:ir.model.fields.selection,name:hr_attendance_inherit.selection__marketing_campaign__state__draft
+#: model:ir.model.fields.selection,name:hr_attendance_inherit.selection__remote_work_request__state__draft
+#: model_terms:ir.ui.view,arch_db:hr_attendance_inherit.view_email_marketing_search
+#: model_terms:ir.ui.view,arch_db:hr_attendance_inherit.view_hr_payroll_search
+msgid "Draft"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_email_marketing__body
+msgid "Email Body"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:ir.model,name:hr_attendance_inherit.model_email_marketing
+#: model_terms:ir.ui.view,arch_db:hr_attendance_inherit.view_email_marketing_form
+#: model_terms:ir.ui.view,arch_db:hr_attendance_inherit.view_email_marketing_search
+#: model_terms:ir.ui.view,arch_db:hr_attendance_inherit.view_email_marketing_tree
+msgid "Email Marketing"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:ir.actions.act_window,name:hr_attendance_inherit.email_marketing_action
+msgid "Email Marketing Campaigns"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:ir.model,name:hr_attendance_inherit.model_hr_employee
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_employee_checkin_dashboard__employee_id
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_hr_payroll__employee_id
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_hr_payroll_payslip__employee_id
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_remote_work_request__employee_id
+msgid "Employee"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:ir.actions.act_window,name:hr_attendance_inherit.action_employee_checkin_dashboard
+#: model:ir.model,name:hr_attendance_inherit.model_employee_checkin_dashboard
+#: model:ir.ui.menu,name:hr_attendance_inherit.menu_employee_checkin_dashboard
+#: model_terms:ir.ui.view,arch_db:hr_attendance_inherit.view_employee_checkin_dashboard_form
+#: model_terms:ir.ui.view,arch_db:hr_attendance_inherit.view_employee_checkin_dashboard_tree
+msgid "Employee Check-In Dashboard"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model_terms:ir.ui.view,arch_db:hr_attendance_inherit.hr_attendance_view_form_inherit
+msgid "Employee attendances"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_hr_training__end_date
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_marketing_campaign__end_date
+msgid "End Date"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_audit_log__entry_id
+msgid "Entry ID"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_marketing_performance_tracking__expected_revenue
+msgid "Expected Revenue"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:ir.model.fields.selection,name:hr_attendance_inherit.selection__custom_account__account_type__expense
+msgid "Expense"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:res.groups,name:hr_attendance_inherit.group_hr_manager_custom
+msgid "HR Manager Custom"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:ir.model,name:hr_attendance_inherit.model_hr_training
+msgid "HR Training"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:ir.model,name:hr_attendance_inherit.model_hr_training_session
+msgid "HR Training Session"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_audit_log__id
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_custom_account__id
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_custom_bank_transaction__id
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_custom_journal_entry__id
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_email_marketing__id
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_employee_checkin_dashboard__id
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_hr_payroll__id
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_hr_payroll_payslip__id
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_hr_training__id
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_hr_training_session__id
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_marketing_campaign__id
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_marketing_performance_tracking__id
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_marketing_segmentation__id
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_remote_work_request__id
+msgid "ID"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:ir.model.fields.selection,name:hr_attendance_inherit.selection__custom_account__account_type__income
+msgid "Income"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model_terms:ir.ui.view,arch_db:hr_attendance_inherit.report_income_statement
+msgid "Income Statement"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:ir.model,name:hr_attendance_inherit.model_report_custom_accounting_report_income_statement
+msgid "Income Statement Report"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_hr_training_session__instructor_id
+msgid "Instructor"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_custom_account__bank_account
+msgid "Is Bank Account"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:ir.actions.act_window,name:hr_attendance_inherit.action_custom_journal_entry
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_custom_account__journal_entry_ids
+#: model:ir.ui.menu,name:hr_attendance_inherit.menu_custom_journal_entries
+#: model_terms:ir.ui.view,arch_db:hr_attendance_inherit.view_form_custom_account
+msgid "Journal Entries"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_audit_log__write_uid
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_custom_account__write_uid
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_custom_bank_transaction__write_uid
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_custom_journal_entry__write_uid
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_email_marketing__write_uid
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_employee_checkin_dashboard__write_uid
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_hr_payroll__write_uid
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_hr_payroll_payslip__write_uid
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_hr_training__write_uid
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_hr_training_session__write_uid
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_marketing_campaign__write_uid
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_marketing_performance_tracking__write_uid
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_marketing_segmentation__write_uid
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_remote_work_request__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_audit_log__write_date
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_custom_account__write_date
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_custom_bank_transaction__write_date
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_custom_journal_entry__write_date
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_email_marketing__write_date
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_employee_checkin_dashboard__write_date
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_hr_payroll__write_date
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_hr_payroll_payslip__write_date
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_hr_training__write_date
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_hr_training_session__write_date
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_marketing_campaign__write_date
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_marketing_performance_tracking__write_date
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_marketing_segmentation__write_date
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_remote_work_request__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_remote_work_request__latitude
+msgid "Latitude"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:ir.model.fields.selection,name:hr_attendance_inherit.selection__custom_account__account_type__liability
+msgid "Liability"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_remote_work_request__longitude
+msgid "Longitude"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model_terms:ir.ui.view,arch_db:hr_attendance_inherit.view_employee_checkin_dashboard_form
+msgid "Mark as Completed"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:ir.ui.menu,name:hr_attendance_inherit.menu_marketing_root
+msgid "Marketing"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:ir.model,name:hr_attendance_inherit.model_marketing_campaign
+#: model_terms:ir.ui.view,arch_db:hr_attendance_inherit.view_marketing_campaign_form
+msgid "Marketing Campaign"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model_terms:ir.ui.view,arch_db:hr_attendance_inherit.report_marketing_campaign_performance
+msgid "Marketing Campaign Performance"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:ir.actions.act_window,name:hr_attendance_inherit.action_marketing_campaign
+#: model_terms:ir.ui.view,arch_db:hr_attendance_inherit.view_marketing_campaign_search
+#: model_terms:ir.ui.view,arch_db:hr_attendance_inherit.view_marketing_campaign_tree
+msgid "Marketing Campaigns"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:res.groups,name:hr_attendance_inherit.group_marketing_manager
+msgid "Marketing Manager"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:ir.model,name:hr_attendance_inherit.model_marketing_performance_tracking
+msgid "Marketing Performance Tracking"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:ir.model,name:hr_attendance_inherit.model_marketing_segmentation
+msgid "Marketing Segmentation"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:ir.actions.act_window,name:hr_attendance_inherit.action_marketing_segmentation
+msgid "Marketing Segmentations"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:res.groups,name:hr_attendance_inherit.group_marketing_team
+msgid "Marketing Team"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_marketing_segmentation__member_count
+msgid "Member Count"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_audit_log__name
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_custom_journal_entry__name
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_employee_checkin_dashboard__name
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_hr_payroll__name
+msgid "Name"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_hr_payroll_payslip__net_salary
+msgid "Net Salary"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:ir.ui.menu,name:hr_attendance_inherit.menu_hr_payroll_overview
+msgid "Overview"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:ir.model.fields.selection,name:hr_attendance_inherit.selection__hr_payroll__state__paid
+#: model_terms:ir.ui.view,arch_db:hr_attendance_inherit.view_hr_payroll_search
+msgid "Paid"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_hr_training__employee_ids
+msgid "Participants"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:ir.model,name:hr_attendance_inherit.model_hr_payroll
+#: model:ir.ui.menu,name:hr_attendance_inherit.menu_hr_payroll_root
+#: model_terms:ir.ui.view,arch_db:hr_attendance_inherit.view_hr_payroll_form
+#: model_terms:ir.ui.view,arch_db:hr_attendance_inherit.view_hr_payroll_search
+#: model_terms:ir.ui.view,arch_db:hr_attendance_inherit.view_hr_payroll_tree
+msgid "Payroll"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:ir.actions.act_window,name:hr_attendance_inherit.action_hr_payroll_overview
+msgid "Payroll Overview"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:ir.model,name:hr_attendance_inherit.model_hr_payroll_payslip
+#: model_terms:ir.ui.view,arch_db:hr_attendance_inherit.view_hr_payroll_payslip_form
+msgid "Payroll Payslip"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model_terms:ir.ui.view,arch_db:hr_attendance_inherit.view_hr_payroll_payslip_tree
+msgid "Payroll Payslips"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:ir.actions.act_window,name:hr_attendance_inherit.action_hr_payroll_payslip
+#: model:ir.ui.menu,name:hr_attendance_inherit.menu_hr_payroll_slips
+msgid "Payroll Slips"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_hr_payroll_payslip__name
+msgid "Payslip Name"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:ir.ui.menu,name:hr_attendance_inherit.menu_hr_payroll_payslip
+msgid "Payslips"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:ir.model.fields.selection,name:hr_attendance_inherit.selection__employee_checkin_dashboard__check_in_status__pending
+msgid "Pending"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:ir.actions.act_window,name:hr_attendance_inherit.action_marketing_performance_tracking
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_marketing_campaign__performance_tracking_ids
+#: model:ir.ui.menu,name:hr_attendance_inherit.menu_marketing_performance_tracking
+#: model_terms:ir.ui.view,arch_db:hr_attendance_inherit.view_marketing_campaign_form
+#: model_terms:ir.ui.view,arch_db:hr_attendance_inherit.view_marketing_performance_tracking_form
+#: model_terms:ir.ui.view,arch_db:hr_attendance_inherit.view_marketing_performance_tracking_tree
+msgid "Performance Tracking"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_remote_work_request__radius
+msgid "Radius (meters)"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_email_marketing__recipient_ids
+msgid "Recipients"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_custom_bank_transaction__reconciled
+msgid "Reconciled"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:ir.model.fields.selection,name:hr_attendance_inherit.selection__remote_work_request__state__rejected
+msgid "Rejected"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:ir.model,name:hr_attendance_inherit.model_remote_work_request
+msgid "Remote Work Request"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_remote_work_request__name
+msgid "Request Name"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:ir.model.fields.selection,name:hr_attendance_inherit.selection__marketing_campaign__state__running
+msgid "Running"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_hr_payroll_payslip__salary
+msgid "Salary"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_hr_payroll__salary_amount
+msgid "Salary Amount"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:ir.model.fields.selection,name:hr_attendance_inherit.selection__email_marketing__state__scheduled
+#: model_terms:ir.ui.view,arch_db:hr_attendance_inherit.view_email_marketing_search
+msgid "Scheduled"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_email_marketing__scheduled_date
+msgid "Scheduled Date"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_marketing_segmentation__name
+msgid "Segment Name"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_marketing_segmentation__criteria
+msgid "Segmentation Criteria"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_marketing_campaign__segmentation_ids
+#: model:ir.ui.menu,name:hr_attendance_inherit.menu_marketing_segmentation
+#: model_terms:ir.ui.view,arch_db:hr_attendance_inherit.view_marketing_campaign_form
+msgid "Segmentations"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:ir.actions.server,name:hr_attendance_inherit.action_send_checkin_reminder
+msgid "Send Check-In Reminder"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:ir.actions.server,name:hr_attendance_inherit.ir_cron_send_checkin_reminders_ir_actions_server
+msgid "Send Check-In Reminders"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:ir.actions.server,name:hr_attendance_inherit.action_send_checkout_reminder
+msgid "Send Check-Out Reminder"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:ir.actions.server,name:hr_attendance_inherit.ir_cron_send_checkout_reminders_ir_actions_server
+msgid "Send Check-Out Reminders"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:ir.model.fields.selection,name:hr_attendance_inherit.selection__email_marketing__state__sent
+#: model_terms:ir.ui.view,arch_db:hr_attendance_inherit.view_email_marketing_search
+msgid "Sent"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_hr_training_session__session_date
+msgid "Session Date"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_hr_training_session__name
+msgid "Session Name"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_hr_training__start_date
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_marketing_campaign__start_date
+msgid "Start Date"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_email_marketing__state
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_hr_payroll__state
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_marketing_campaign__state
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_remote_work_request__state
+msgid "Status"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_email_marketing__subject
+msgid "Subject"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_marketing_campaign__target_audience
+msgid "Target Audience"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_marketing_performance_tracking__total_budget
+msgid "Total Budget"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_hr_training_session__training_id
+#: model:ir.ui.menu,name:hr_attendance_inherit.menu_hr_training_root
+#: model_terms:ir.ui.view,arch_db:hr_attendance_inherit.view_hr_training_form
+msgid "Training"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_hr_training__name
+msgid "Training Name"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model_terms:ir.ui.view,arch_db:hr_attendance_inherit.view_hr_training_session_form
+msgid "Training Session"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:ir.actions.act_window,name:hr_attendance_inherit.action_hr_training_session
+#: model:ir.ui.menu,name:hr_attendance_inherit.menu_hr_training_session
+#: model_terms:ir.ui.view,arch_db:hr_attendance_inherit.view_hr_training_session_tree
+msgid "Training Sessions"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:ir.actions.act_window,name:hr_attendance_inherit.action_hr_training
+#: model:ir.ui.menu,name:hr_attendance_inherit.menu_hr_training
+#: model_terms:ir.ui.view,arch_db:hr_attendance_inherit.view_hr_training_tree
+msgid "Trainings"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#: model:ir.model.fields,field_description:hr_attendance_inherit.field_audit_log__user_id
+msgid "User"
+msgstr ""
+
+#. module: hr_attendance_inherit
+#. odoo-python
+#: code:addons/hr_attendance_inherit/models/hr_attendance.py:0
+#, python-format
+msgid "You can only check in from an allowed location."
+msgstr ""
+
+#. module: hr_attendance_inherit
+#. odoo-python
+#: code:addons/hr_attendance_inherit/models/hr_attendance.py:0
+#, python-format
+msgid "You can only check out from an allowed location."
+msgstr ""

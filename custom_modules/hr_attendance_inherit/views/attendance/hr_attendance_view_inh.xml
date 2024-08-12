@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Inherit the attendance form view to add geolocation fields -->
+    <record id="hr_attendance_view_form_inherit" model="ir.ui.view">
+        <field name="name">hr.attendance.form.inherit</field>
+        <field name="model">hr.attendance</field>
+        <field name="inherit_id" ref="hr_attendance.hr_attendance_view_form"/>
+        <field name="arch" type="xml">
+            <form string="Employee attendances">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="in_latitude" position="after">
+                                <field name="employee_id"/>
+                            </field>
+                            <field name="in_longitude"/>
+                            <field name="out_latitude"/>
+                            <field name="out_longitude"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>

@@ -1,0 +1,14 @@
+<odoo>
+    <record id="action_hr_payroll_overview" model="ir.actions.act_window">
+        <field name="name">Payroll Overview</field>
+        <field name="res_model">hr.payroll</field>
+        <field name="view_mode">tree,form</field>
+        <field name="groups_id" eval="[(6, 0, [ref('hr.group_hr_manager')])]"/>
+    </record>
+
+    <record id="action_hr_payroll_payslip" model="ir.actions.act_window">
+        <field name="name">Payroll Slips</field>
+        <field name="res_model">hr.payroll.payslip</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>

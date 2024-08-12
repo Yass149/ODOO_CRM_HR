@@ -1,0 +1,5 @@
+<odoo>
+    <menuitem id="menu_client_partner_root" name="Client/Partner" sequence="10"/>
+    <menuitem id="menu_client_partner" name="Client/Partner" parent="menu_client_partner_root" action="hr_attendance_inherit.action_client_partner"/>
+    <menuitem id="menu_client_partner_interaction" name="Interactions" parent="menu_client_partner_root" action="hr_attendance_inherit.action_client_partner_interaction"/>
+</odoo>

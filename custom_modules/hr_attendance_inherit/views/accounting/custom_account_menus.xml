@@ -1,0 +1,7 @@
+<!-- File: custom_modules/hr_attendance_inherit/views/custom_account_menus.xml -->
+
+<odoo>
+    <menuitem id="menu_custom_accounting_root" name="Accounting" sequence="10"/>
+    <menuitem id="menu_custom_accounts" name="Accounts" parent="menu_custom_accounting_root" action="action_custom_account" sequence="10"/>
+    <menuitem id="menu_custom_journal_entries" name="Journal Entries" parent="menu_custom_accounting_root" action="action_custom_journal_entry" sequence="20"/>
+</odoo>

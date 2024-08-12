@@ -1,0 +1,13 @@
+<odoo>
+    <!-- Define the action for remote work requests -->
+    <record id="action_remote_work_request" model="ir.actions.act_window">
+        <field name="name">Request Remote Work</field>
+        <field name="res_model">remote.work.request</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field> <!-- Open the form view in a new window -->
+    </record>
+
+    <!-- Define the menu item to access remote work request -->
+    <menuitem id="menu_remote_work_request" name="Request Remote Work" parent="hr.menu_hr_root" sequence="10"/>
+    <menuitem id="menu_remote_work_request_form" name="Request Remote Work" parent="menu_remote_work_request" action="action_remote_work_request"/>
+</odoo>

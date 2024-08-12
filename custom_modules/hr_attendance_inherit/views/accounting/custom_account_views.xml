@@ -1,0 +1,110 @@
+<!-- File: custom_modules/hr_attendance_inherit/views/custom_account_views.xml -->
+
+<odoo>
+    <record id="view_tree_custom_account" model="ir.ui.view">
+        <field name="name">custom.account.tree</field>
+        <field name="model">custom.account</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="balance"/>
+                <field name="account_type"/>
+                <field name="bank_account"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_form_custom_account" model="ir.ui.view">
+        <field name="name">custom.account.form</field>
+        <field name="model">custom.account</field>
+        <field name="arch" type="xml">
+            <form>
+                <group>
+                    <field name="name"/>
+                    <field name="balance"/>
+                    <field name="account_type"/>
+                    <field name="bank_account"/>
+                </group>
+                <notebook>
+                    <page string="Bank Transactions">
+                        <field name="bank_transactions_ids">
+                            <tree>
+                                <field name="amount"/>
+                                <field name="reconciled"/>
+                            </tree>
+                        </field>
+                    </page>
+                    <page string="Journal Entries">
+                        <field name="journal_entry_ids">
+                            <tree>
+                                <field name="name"/>
+                                <field name="date"/>
+                                <field name="debit"/>
+                                <field name="credit"/>
+                                <field name="description"/>
+                            </tree>
+                        </field>
+                    </page>
+                </notebook>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_tree_custom_journal_entry" model="ir.ui.view">
+        <field name="name">custom.journal.entry.tree</field>
+        <field name="model">custom.journal.entry</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="account_id"/>
+                <field name="name"/>
+                <field name="date"/>
+                <field name="debit"/>
+                <field name="credit"/>
+                <field name="description"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_form_custom_journal_entry" model="ir.ui.view">
+        <field name="name">custom.journal.entry.form</field>
+        <field name="model">custom.journal.entry</field>
+        <field name="arch" type="xml">
+            <form>
+                <group>
+                    <field name="account_id"/>
+                    <field name="name"/>
+                    <field name="date"/>
+                    <field name="debit"/>
+                    <field name="credit"/>
+                    <field name="description"/>
+                </group>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_tree_custom_bank_transaction" model="ir.ui.view">
+        <field name="name">custom.bank.transaction.tree</field>
+        <field name="model">custom.bank.transaction</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="account_id"/>
+                <field name="amount"/>
+                <field name="reconciled"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_form_custom_bank_transaction" model="ir.ui.view">
+        <field name="name">custom.bank.transaction.form</field>
+        <field name="model">custom.bank.transaction</field>
+        <field name="arch" type="xml">
+            <form>
+                <group>
+                    <field name="account_id"/>
+                    <field name="amount"/>
+                    <field name="reconciled"/>
+                </group>
+            </form>
+        </field>
+    </record>
+</odoo>

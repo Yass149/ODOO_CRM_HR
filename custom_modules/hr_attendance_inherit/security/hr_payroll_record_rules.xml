@@ -1,0 +1,25 @@
+<odoo>
+    <!-- Record rule for employees to see only their own payslips -->
+    <record id="rule_payslip_see_own" model="ir.rule">
+        <field name="name">See Own Payslips</field>
+        <field name="model_id" ref="model_hr_payroll_payslip"/>
+        <field name="domain_force">[('employee_id.user_id', '=', user.id)]</field>
+        <field name="perm_read" eval="1"/>
+        <field name="perm_write" eval="0"/>
+        <field name="perm_create" eval="0"/>
+        <field name="perm_unlink" eval="0"/>
+        <field name="groups" eval="[(6, 0, [ref('base.group_user')])]"/>
+    </record>
+
+    <!-- Record rule for HR managers to see all payslips -->
+    <record id="rule_payslip_see_all" model="ir.rule">
+        <field name="name">See All Payslips</field>
+        <field name="model_id" ref="model_hr_payroll_payslip"/>
+        <field name="domain_force">[(1, '=', 1)]</field>
+        <field name="perm_read" eval="1"/>
+        <field name="perm_write" eval="1"/>
+        <field name="perm_create" eval="1"/>
+        <field name="perm_unlink" eval="1"/>
+        <field name="groups" eval="[(6, 0, [ref('hr.group_hr_manager')])]"/>
+    </record>
+</odoo>
